@@ -108,7 +108,7 @@ interface:
 
 # Example Registration Object Structure (optional)
 registration:
-  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook', 'apple', 'saml']
+  socialLogins: ['saml']
   # allowedDomains:
   # - "gmail.com"
 
@@ -165,11 +165,11 @@ actions:
 
 # Example MCP Servers Object Structure
 mcpServers:
-  items-server:
+  vasarik-toolbox:
     # type: sse # type can optionally be omitted
     headers:
       X-Conversation-ID: "{{LIBRECHAT_BODY_CONVERSATIONID}}"
-    url: http://host.docker.internal:9000/sse/
+    url: https://vasarikmcp-e9cfaxfdc9cefcdk.uksouth-01.azurewebsites.net/sse/
     timeout: 60000  # 1 minute timeout for this server, this is the default timeout for MCP servers.
 #   puppeteer:
 #     type: stdio
