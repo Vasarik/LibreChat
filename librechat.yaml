@@ -169,7 +169,8 @@ mcpServers:
     # type: sse # type can optionally be omitted
     headers:
       X-Conversation-ID: "{{LIBRECHAT_BODY_CONVERSATIONID}}"
-    url: https://vasarikmcp-e9cfaxfdc9cefcdk.uksouth-01.azurewebsites.net/sse/
+    url: https://vasarikmcp-e9cfaxfdc9cefcdk.uksouth-01.azurewebsites.net/
+    type: 'streamable-http'
     timeout: 60000  # 1 minute timeout for this server, this is the default timeout for MCP servers.
 #   puppeteer:
 #     type: stdio
